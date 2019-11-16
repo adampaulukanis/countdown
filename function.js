@@ -1,6 +1,6 @@
 (function (root) {
   const year = new Date().getFullYear()
-  const chooseDate = new Date(year, 8, 1).getTime()
+  const chooseDate = new Date(year, 11, 1).getTime()
 
   let countdown = setInterval(function () {
     const today = new Date().getTime()
