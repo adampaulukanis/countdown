@@ -1,6 +1,6 @@
 (function (root) {
   const year = new Date().getFullYear()
-  const chooseDate = new Date(year, 11, 1).getTime()
+  const chooseDate = new Date('2020-03-10T08:55').getTime()
 
   let countdown = setInterval(function () {
     const today = new Date().getTime()
@@ -12,10 +12,10 @@
     let seconds = Math.floor((diff % (1000 * 60)) / 1000)
 
     document.getElementById('countdown').innerHTML =
-      '<div class="days"><div class="c-number">' + days + '</div>days</div>' +
-      '<div class="hours"><div class="c-number">' + hours + '</div>hours</div>' +
-      '<div class="minutes"><div class="c-number">' + minutes + '</div>minutes</div>' +
-      '<div class="seconds"><div class="c-number">' + seconds + '</div>seconds</div>' +
-      '<div class="left">LEFT</div></div>'
+      '<div class="days"><div class="c-number">' + days + '</div>dni</div>' +
+      '<div class="hours"><div class="c-number">' + hours + '</div>godziny</div>' +
+      '<div class="minutes"><div class="c-number">' + minutes + '</div>minuty</div>' +
+      '<div class="seconds"><div class="c-number">' + seconds + '</div>sekundy</div>' +
+      '<div class="left">ZOSTAŁO</div></div>'
   }, 1000)
 }(this))
