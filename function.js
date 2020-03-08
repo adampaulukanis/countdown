@@ -1,6 +1,6 @@
 (function (root) {
   const year = new Date().getFullYear()
-  const chooseDate = new Date('2020-03-10T20:00').getTime()
+  const chooseDate = new Date('2020-03-09T06:00').getTime()
 
   function padZero (number) {
     let numberString = String(number);
