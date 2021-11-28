@@ -41,18 +41,32 @@ h1 sup {
   margin-top: 5%;
 }
 
-.days, .hours, .minutes, .seconds, .left {
+.days,
+.hours,
+.minutes,
+.seconds,
+.left {
   display: inline-block;
   padding: 20px;
   min-width: 120px;
   border-radius: 10px;
 }
 
-.days { background: #d87200; }
-.hours { background: #ff3e41; }
-.minutes { background: #ffb20c; }
-.seconds { background: #2186ff; }
-.left { background: #e10a0a; }
+.days {
+  background: #d87200;
+}
+.hours {
+  background: #ff3e41;
+}
+.minutes {
+  background: #ffb20c;
+}
+.seconds {
+  background: #2186ff;
+}
+.left {
+  background: #e10a0a;
+}
 .c-number {
   font-family: sans-serif;
   color: #333;
@@ -61,7 +75,14 @@ h1 sup {
 
 footer {
   text-align: center;
-  background: #fff;
-  padding: 1em;
+  background: rgba(255, 255, 255, 0.9);
   color: #222;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+footer p {
+  font-size: 0.8rem;
+  line-height: 1.25;
+  margin: 0;
+  overflow:hidden;
+  padding: 2rem;
 }
