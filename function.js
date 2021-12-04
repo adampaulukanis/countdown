@@ -1,7 +1,14 @@
+/* jshint esversion: 6, browser: true */
+function returnDate(search) {
+  let dateParam = new URLSearchParams(search);
+  return dateParam.get('date');
+}
+
 (function (root) {
+  'use strict';
   const year = new Date().getFullYear();
-  const now = returnDate(location.search) || '2022-01-01T19:22';
-  const chooseDate = new Date(now).getTime();
+  const findDate = returnDate(location.search) || '2022-01-01T19:22';
+  const chooseDate = new Date(findDate).getTime();
 
   function padZero(number) {
     let numberString = String(number);
@@ -51,7 +58,3 @@
   }, 1000);
 })(this);
 
-function returnDate(search) {
-  let dateParam = new URLSearchParams(search);
-  return dateParam.get('date');
-}
