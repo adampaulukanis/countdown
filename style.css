@@ -22,9 +22,12 @@ h1 {
   text-align: center;
   margin-top: 2em;
   font-size: 2em;
-  text-transform: uppercase;
   letter-spacing: 3px;
   color: #f6f4f3;
+  background: white;
+}
+h1 a {
+  padding: 0.2em 1em;
 }
 
 h1 sup {
