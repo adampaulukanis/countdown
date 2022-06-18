@@ -4,11 +4,16 @@ function returnDate(search) {
   return dateParam.get('date');
 }
 
-(function (root) {
+(function (_) {
   'use strict';
+  const h1a = document.querySelector('h1 a');
   const year = new Date().getFullYear();
-  const findDate = returnDate(location.search) || '2022-01-01T19:22';
+  const findDate = returnDate(location.search) || h1a.innerText;
   const chooseDate = new Date(findDate).getTime();
+
+  let href = findDate;
+  h1a.setAttribute('href', '/?date=' + href);
+  h1a.innerText = href;
 
   function padZero(number) {
     let numberString = String(number);

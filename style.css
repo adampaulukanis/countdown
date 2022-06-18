@@ -29,6 +29,9 @@ h1 {
 h1 a {
   padding: 0.2em 1em;
 }
+h1 a::before {
+    content: "/?date=";
+}
 
 h1 sup {
   text-transform: lowercase;
