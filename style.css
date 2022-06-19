@@ -1,50 +1,52 @@
 html {
-  margin: 0;
-  padding: 0;
-  border: none;
-  display: grid;
-  min-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: grid;
+    min-height: 100%;
 }
 
 body {
-  display: grid;
-  background: #333;
+    display: grid;
+    background: #333;
 }
 
 main {
-  margin: auto;
-  overflow: hidden;
-  width: 850px;
-  height: 480px;
+    margin: auto;
+    overflow: hidden;
+    /*
+    width: 850px;
+    height: 480px;
+    */
 }
 
 h1 {
-  text-align: center;
-  margin-top: 2em;
-  font-size: 2em;
-  letter-spacing: 3px;
-  color: #f6f4f3;
-  background: white;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: #f6f4f3;
+    background: white;
 }
 h1 a {
-  padding: 0.2em 1em;
+    padding: 0.2em 1em;
 }
 h1 a::before {
     content: "/?date=";
 }
 
 h1 sup {
-  text-transform: lowercase;
-  color: #ff3e41;
+    text-transform: lowercase;
+    color: #ff3e41;
 }
 
 #countdown {
-  color: #f6f4f3;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 5px;
-  margin-top: 5%;
+    color: #f6f4f3;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 5px;
+    margin-top: 5%;
 }
 
 .days,
@@ -52,43 +54,43 @@ h1 sup {
 .minutes,
 .seconds,
 .left {
-  display: inline-block;
-  padding: 20px;
-  min-width: 120px;
-  border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    min-width: 120px;
+    border-radius: 10px;
 }
 
 .days {
-  background: #d87200;
+    background: #d87200;
 }
 .hours {
-  background: #ff3e41;
+    background: #ff3e41;
 }
 .minutes {
-  background: #ffb20c;
+    background: #ffb20c;
 }
 .seconds {
-  background: #2186ff;
+    background: #2186ff;
 }
 .left {
-  background: #e10a0a;
+    background: #e10a0a;
 }
 .c-number {
-  font-family: sans-serif;
-  color: #333;
-  font-size: 5em;
+    font-family: sans-serif;
+    color: #333;
+    font-size: 5em;
 }
 
 footer {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.9);
-  color: #222;
-  border-radius: 0 0 1.5rem 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    color: #222;
+    border-radius: 0 0 1.5rem 1.5rem;
 }
 footer p {
-  font-size: 0.8rem;
-  line-height: 1.25;
-  margin: 0;
-  overflow:hidden;
-  padding: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    margin: 0;
+    overflow:hidden;
+    padding: 2rem;
 }
