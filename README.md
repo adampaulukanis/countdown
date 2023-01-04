@@ -1,10 +1,7 @@
 # Simple JavaScript Plus HTML and CSS Countdown Timer
-[url](https://adampaulukanis.github.io/countdown/)
 
-The code used here comes from [here](https://webdevtrick.com/javascript-countdown-timer/).
+[url](https://adampaulukanis.github.io/countdown/)
 
 ## Use
 
-```
-php -S localhost:12345
-```
+Add `?date=2023-01-19T11:40` parameter or something similar. Also could be specified something like only date.

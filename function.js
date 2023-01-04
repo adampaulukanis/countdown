@@ -14,15 +14,12 @@ function padZero(number) {
 
 (function (_) {
     'use strict';
-    const h1a = document.querySelector('h1 a');
     const year = new Date().getFullYear();
-    const findDate = returnDate(location.search) || h1a.innerText;
+    const findDate = returnDate(location.search) || '2023-12-25';
     const chooseDate = new Date(findDate).getTime();
-    console.log(location.search, findDate);
+    console.log('>', location.search, findDate);
 
     let href = findDate;
-    h1a.setAttribute('href', '/?date=' + href);
-    h1a.innerText = href;
 
     let countdown = setInterval(function () {
         const today = new Date().getTime();
@@ -37,8 +34,8 @@ function padZero(number) {
             document.getElementById('countdown').innerHTML =
             '<div class="days"><div class="c-number">' +
                 days +
-                '</div>dni</div>' +
-                '<div class="left">ZOSTAŁO</div></div>';
+                '</div>days</div>' +
+                '<div class="left">left</div></div>';
         } else {
             let hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -51,17 +48,17 @@ function padZero(number) {
             document.getElementById('countdown').innerHTML =
             '<div class="days"><div class="c-number">' +
                 days +
-                '</div>dni</div>' +
+                '</div>days</div>' +
                 '<div class="hours"><div class="c-number">' +
                 hours +
-                '</div>godziny</div>' +
+                '</div>hours</div>' +
                 '<div class="minutes"><div class="c-number">' +
                 minutes +
-                '</div>minuty</div>' +
+                '</div>minutes</div>' +
                 '<div class="seconds"><div class="c-number">' +
                 seconds +
-                '</div>sekundy</div>' +
-                '<div class="left">ZOSTAŁO</div></div>';
+                '</div>seconds</div>' +
+                '<div class="left">left</div></div>';
         }
     }, 1000);
 })(this);
