@@ -1,7 +1,10 @@
 /* jshint esversion: 6, browser: true */
-function returnDate(search) {
-    let dateParam = new URLSearchParams(search);
-    return dateParam.get('date');
+function returnParam(param) {
+    const theParam = new URL(window.location.href).searchParams.get(param);
+
+    console.log(param, theParam);
+
+    return theParam;
 }
 
 function padZero(number) {
@@ -15,11 +18,8 @@ function padZero(number) {
 (function (_) {
     'use strict';
     const year = new Date().getFullYear();
-    const findDate = returnDate(location.search) || '2023-12-25';
+    const findDate = returnParam('date') || '2023-12-25';
     const chooseDate = new Date(findDate).getTime();
-    console.log('>', location.search, findDate);
-
-    let href = findDate;
 
     let countdown = setInterval(function () {
         const today = new Date().getTime();
@@ -27,7 +27,6 @@ function padZero(number) {
 
         let days    = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-        console.log(`days=${days}`);
         if (isNaN(days)) return;
 
         if (days > 99 || days < -90) {
