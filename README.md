@@ -4,4 +4,4 @@
 
 ## Use
 
-Add `?date=2023-01-19T11:40` parameter or something similar. Also could be specified something like only date.
+Add `?date=2023-01-19T11:40` parameter or something similar. Also could be specified only date without time.
