@@ -31,7 +31,7 @@ function padZero(number) {
 
         if (days > 99 || days < -90) {
             document.getElementById('countdown').innerHTML =
-            '<div class="days"><div class="c-number">' +
+                '<div class="days"><div class="c-number">' +
                 days +
                 '</div>days</div>' +
                 '<div class="left">left</div></div>';
@@ -45,7 +45,7 @@ function padZero(number) {
             seconds = padZero(seconds);
 
             document.getElementById('countdown').innerHTML =
-            '<div class="days"><div class="c-number">' +
+                '<div class="days"><div class="c-number">' +
                 days +
                 '</div>days</div>' +
                 '<div class="hours"><div class="c-number">' +
